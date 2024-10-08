@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User List</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script type="text/javascript">
+        function confirmDeletion(userId) {
+            if (confirm("Are you sure you want to delete this user?")) {
+                window.location.href = "/users/delete/" + userId;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Users</h1>
+    <div class="create-button-container">
+        <a href="/users/create" class="create-button">Create New User</a>
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ user['id'] }}</td>
+                <td>{{ user['name'] }}</td>
+                <td>{{ user['email'] }}</td>
+                <td>{{ user['age'] }}</td>
+                <td>
+                    <a href="/users/edit/{{ user['id'] }}">Edit</a> |
+                    <a href="javascript:void(0);" onclick="confirmDeletion({{ user['id'] }})">Delete</a>
+                </td>
+            </tr>
+            {% end %}
+        </tbody>
+    </table>
+</body>
+</html>

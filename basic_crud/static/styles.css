@@ -1,0 +1,194 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button Styles */
+button, input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Form Styling */
+form {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+a.button:hover {
+    background-color: #2980b9;
+}
+/* Styling for the 'Create New User' Button */
+a.create-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745; /* Green color */
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 20px auto;
+}
+
+a.create-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Center-align the button */
+.create-button-container {
+    text-align: center;
+}
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: separate; /* Allows border spacing */
+    border-spacing: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for better depth */
+    border-radius: 10px; /* Rounds the corners of the table */
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+table td {
+    text-align: center;
+}
+
+/* Alternate row background for better readability */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+/* Styling the table borders */
+table th:first-child, table td:first-child {
+    border-left: none; /* Removes left border */
+}
+
+table th:last-child, table td:last-child {
+    border-right: none; /* Removes right border */
+}
+
+table th, table td {
+    border-left: 1px solid #ddd; /* Inner cell borders */
+}
+
+table th:first-child {
+    border-top-left-radius: 10px; /* Top-left corner */
+}
+
+table th:last-child {
+    border-top-right-radius: 10px; /* Top-right corner */
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px; /* Bottom-left corner */
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px; /* Bottom-right corner */
+}
+
